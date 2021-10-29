@@ -45,8 +45,9 @@ export default function Header() {
                 <div className="cursor-pointer">YOLCULUĞUM</div>
                 <div className="cursor-pointer">SEMİNERLERİM</div>
                 <div className="cursor-pointer">YOLCULUKLARIMIZ</div>
+                <Link href="/gallery">
                 <div className="cursor-pointer">FOTOĞRAFLAR</div>
-
+                </Link>
                   </li>
                   <li className="py-4 border-[#C4C4C4] border-t-2 xl:py-0 xl:border-t-0">
                   <div className="cursor-pointer">ÇALIŞMALARIMIZ</div>
