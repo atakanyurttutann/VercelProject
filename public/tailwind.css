@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.ayar{
+    top: calc(50% - 110px);
+    left: 6%
+
+  }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@layer components{
+
+    .navbar{
+        @apply xl:flex-row  font-bold fixed -right-full  xl:right-0  xl:flex  gap-5 flex-col xl:gap-10  xl:relative   transition-all  top-[110px] h-full w-full bg-white xl:top-[0px]
+    }
+    .navbar.action{
+        @apply  flex right-0 bg-black text-white  pt-[50px]   z-10 pl-10 gap-0 overflow-scroll 
+    }
+   
+}

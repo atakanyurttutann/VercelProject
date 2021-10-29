@@ -1,0 +1,3 @@
+export const IMAGE_URL_CHANGE = "IMAGE_URL_CHANGE";
+export const FORM_DATA_ADD ="FORM_DATA_ADD";
+export const IMAGE_URL_DATA ="IMAGE_URL_DATA";
