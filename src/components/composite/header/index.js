@@ -66,7 +66,7 @@ export default function Header() {
               <li className="py-4 border-b-2 border-[#C4C4C4] border-t-2 xl:py-0 xl:border-t-0 xl:border-b-0">
                 <div className="cursor-pointer">İLETİŞİM</div>
               </li>
-              <li className="flex flex-row justify-center items-start xl:hidden">
+              <li className="flex flex-row justify-center items-start xl:hidden mt-8">
                 <Social classParameter="gap-0" />
               </li>
             </ul>

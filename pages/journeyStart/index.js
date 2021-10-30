@@ -5,7 +5,7 @@ import Footer from "@/composite/footer/footer";
 const Index = () => {
   return (
     <div>
-      <div className="container mx-auto">
+      <div>
       <Header />
       </div>
       <JourneyStart />

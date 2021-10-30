@@ -5,21 +5,56 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
-}
+    font-family: 'Montserrat', sans-serif;}
 .ayar{
     
     left: -60px;
     translate: translateY(100%);
 
   }
+  .atikan input:checked ~ .yes:after {
+    font-family: "Font Awesome 6 Free";
+    color:#17D67A ;
+      content: "\f00c";
+      display: flex;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: bold;
+      transition: 1s all
+        
+}
+.atikan input:checked ~ .no:after {
+    font-family: "Font Awesome 6 Free";
+    color:#EA250B ;
+      content: "\f00d";
+      display: flex;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: bold;
+      transition: 1s all
+        
+}
+.navbar{
+    
+    transition: 500ms all
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 @layer components{
 
     .navbar{
-        @apply xl:flex-row xl:pl-0 pl-10 text-[14px]    items-center font-bold fixed -right-full  xl:right-0  top-0   xl:flex  gap-5 flex-col xl:gap-10  xl:relative  w-full h-full   transition-all  xl:bg-white  bg-black  text-white opacity-5 xl:opacity-100 xl:text-[#3D3C3C]
+        @apply xl:flex-row xl:pl-0 pl-10 text-[14px]    z-10 items-center font-bold fixed -right-full  xl:right-0  top-0    opacity-0 xl:flex  gap-5 flex-col xl:gap-10    xl:relative  w-full h-full     xl:bg-white  bg-black  text-white  xl:opacity-100 xl:text-[#3D3C3C]
     }
     .navbar.action{
-        @apply   right-0   z-10 opacity-100
+        @apply   right-0   z-10 opacity-100 
     }
+    .atikan input:checked ~ .yes {
+        @apply border-[#17D67A]
+
    
+    }
+    .atikan input:checked ~ .no {
+        @apply border-[#EA250B]
+
+   
+    }
 }

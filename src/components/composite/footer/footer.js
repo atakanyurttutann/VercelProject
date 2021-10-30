@@ -5,7 +5,7 @@ import Social from "@/composite/social/index";
 
 export default function Footer() {
   return (
-    <div className="bottom-0  w-full left-0 block  static  bg-black text-white">
+    <div className="bottom-0  w-full left-0 block  static  bg-black text-white font-inter">
       <div className="flex flex-row  xl:justify-between justify-center items-center text-center pt-10 pb-10 container mx-auto">
         <div>
           <Link href="/">
@@ -32,10 +32,10 @@ export default function Footer() {
       </div>
 
       <div className="flex flex-row  xl:justify-between justify-center items-center text-center container mx-auto pb-10 gap-5 xl:gap-0">
-        <div className="-mt-10">
+        <div className="flex justify-center items-center">
           <Social />
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center  text-[12px]">
           copyright © ferhancihaner.com
         </div>
       </div>
