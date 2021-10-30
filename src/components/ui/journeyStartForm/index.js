@@ -8,9 +8,9 @@ const JourneyStartForm = () => {
     <div id="page1" className="mt-10 flex  flex-col flex-wrap">
       <div className="text-2xl font-bold">Kişisel Bilgiler </div>
 
-      <div className="flex flex-wrap  justify-start w-12/12 mt-10 gap-y-2 w-full">
+      <div className="flex flex-wrap  justify-start w-12/12 mt-10 gap-y-4 w-full">
         {inputJourneyStart.map((e) => (
-          <div className="w-6/12 px-1">
+          <div className="w-6/12 px-4">
             <Input
               name={e.name}
               placeholder={e.placeholder}

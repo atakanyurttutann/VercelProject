@@ -37,18 +37,19 @@ const Index = () => {
     setPart(pageSize + 1);
     dispatch(formDataAdd(formData));
   };
-  return (
-    <div className="flex flex-col w-full h-full mb-[600px]">
-      <BigTitle title="Yolculuğa Başla" />
-      <div className="p-4 xl:pl-[35%] xl:pr-[35%] xl:pt-10 pt-10">
-        {part == 3 ? (
+  /*
+     {part == 3 ? (
           ""
         ) : (
           <div className="text-4xl font-bold ">Adım {part}</div>
-        )}
-
+        )}*/
+  return (
+    <div className="flex flex-col  w/12-12 mb-[400px]">
+      <BigTitle title="Yolculuğa Başla" />
+      <div className="p-4  flex  xl:w-4/12 w-12/12 mx-auto xl:pt-10 pt-10">
+    
         {part == 1 && (
-          <form onSubmit={(e) => partSkip(e, 1)}>
+          <form className="" onSubmit={(e) => partSkip(e, 1)}>
             <JourneyStartForm />
           </form>
         )}

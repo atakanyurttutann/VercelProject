@@ -3,13 +3,11 @@ import Social from "@/composite/social/index";
 import Image from "next/image";
 export default function Home() {
   return (
-    <div className="h-screen">
+    <div className="container mx-auto">
       <Header />
-      <div className=" xl:px-[10%]  px-[20px] mx-auto font-inter">
-        
-
+      <div className= "font-inter">
         <div className="shadow-myCard rounded-[12px]">
-          <div className="flex items-center flex-col xl:flex-row">
+          <div className="flex items-center flex-col xl:flex-row relative">
             
                 <img src="/img/ferhan.png" className="w-full xl:w-auto h-full  rounded-bl-[12px] rounded-tl-[12px]"/>
               
@@ -40,22 +38,23 @@ export default function Home() {
                 </p>
                 <p className="mt-5 xl:mb-0 mb-10">Benimle gel ve motive ol!</p>
               </div>
+              <div className="ayar absolute hidden xl:block">
+             <Social classParameter={"text-[#cccccc] flex-col gap-5"} />
+
+</div>
           </div>
         </div>
       </div>
 
     
 
-      <div className="xl:hidden flex justify-center pb-4">
+      <div className="xl:hidden flex justify-center">
         <Social classParameter={"text-[#cccccc]"} />
       </div>
-      <div className="hidden xl:flex justify-end items-center container mx-auto mt-5 font-inter">
+      <div className="hidden xl:flex justify-end items-center  mx-auto mt-5 font-inter text-[12px]">
         copyright © ferhancihaner.com
       </div>
-      <div className="ayar absolute hidden xl:block">
-<Social classParameter={"text-[#cccccc] flex-col gap-5"} />
-
-</div>
+    
     </div>
   );
 }
