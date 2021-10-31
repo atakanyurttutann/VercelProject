@@ -7,6 +7,10 @@ export default function Header() {
   const handle = () => {
     setActive(!active);
   };
+
+  const dropActive =()=>{
+  const element = document.getElementById("dropitem1").classList.toggle("drop-items-active")
+  }
   return (
     <div className="container mx-auto">
       <link
@@ -37,7 +41,6 @@ export default function Header() {
             <ul className={`${active ? "action" : ""} navbar`}>
               <div className="flex  flex-row items-center  justify-between mb-[110px] mt-5 xl:hidden ">
                 <div>
-                  
                   <Link href="/">
                     <a className="xl:pl-0">
                       <img src="/img/logo2.png" />
@@ -45,7 +48,6 @@ export default function Header() {
                   </Link>
                 </div>
                 <div onClick={handle} className="mr-5 cursor-pointer  ">
-                  
                   <i className="fas fa-times text-2xl" />
                 </div>
               </div>
@@ -55,13 +57,29 @@ export default function Header() {
               <li className="py-4 border-[#C4C4C4] border-t-2 xl:py-0 xl:border-t-0">
                 <div className="cursor-pointer">YOLCULUĞUM</div>
               </li>
-              <li className="py-4 border-[#C4C4C4] border-t-2 xl:py-0 xl:border-t-0">
-                <div className="cursor-pointer">ÇALIŞMALARIMIZ</div>
+              <li   onClick={()=>dropActive(dropitem1)} className="py-4 border-[#C4C4C4] border-t-2 xl:py-0 xl:border-t-0 menu-item relative">
+                <div className="flex justify-between">
+                  <div className="cursor-pointer">ÇALIŞMALARIMIZ</div>
+                  <div className="mr-4 xl:hidden"> <i   className="fas fa-caret-down"></i></div>
+                </div>
+
+                <ul  id="dropitem1" className="drop-items">
+                  <li>MOTİVASYON </li>
+                  <hr className="xl:w-full bg-black" />
+                  <li>YOLCUKLARIMIZ</li>
+                  <hr className="xl:w-full bg-black" />
+                  <li>TAVSİYE EDİCİ GIDALAR</li>
+                  <hr className="xl:w-full bg-black" />
+
+                  <li>TAVSİYE EDİCİ GIDALAR</li>
+
+                </ul>
               </li>
               <li className="py-4 border-[#C4C4C4] border-t-2 xl:py-0 xl:border-t-0">
                 <Link href="/journeyStart">
                   <div className="cursor-pointer">YOLCULUĞA BAŞLA</div>
                 </Link>
+              
               </li>
               <li className="py-4 border-b-2 border-[#C4C4C4] border-t-2 xl:py-0 xl:border-t-0 xl:border-b-0">
                 <div className="cursor-pointer">İLETİŞİM</div>

@@ -21,7 +21,7 @@ const Index = () => {
       instagram: info.instagram.value,
       country: info.country.value,
       herbaflife: info.herbaflife.value,
-      herbaflifeMember: info.herbaflifeMember.value,
+      herbaflifMember: info.herbaflifMember.value,
       bodySize: info.bodySize.value,
     };
     setPart(pageSize + 1);

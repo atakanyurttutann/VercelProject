@@ -38,6 +38,74 @@ body{
     
     transition: 500ms all
 }
+
+.drop-items{
+    transform: translateY(15px) scaleY(0);
+    background: white;
+    box-shadow: 0px 12px 14px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    padding: 20px 25px 10px 25px;
+    z-index: 9999;
+    opacity: 1;
+    transform-origin: top center;
+    transition: 350ms all cubic-bezier(.5, 0, .3, 1);
+    left: -70px;
+    width: 280px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 25px;
+    gap: 5px;
+    color: black;
+    position:absolute;
+    display: flex
+
+    }
+    @media screen  {
+        
+    }
+
+    @media only screen and (min-width: 1024px) {
+        .menu-item:hover .drop-items{
+        transform: translateY(0px) scaleY(1);
+    
+        }
+        .drop-items::before{
+            font-family: "Font Awesome 6 Free";
+            content: "\f0d7";
+        }
+      }
+      @media only screen and (max-width: 1024px) {
+        .drop-items{
+          position: absolute;
+          background-color: black;
+          color: white;
+          transform: translateY(15px) scaleY(0);
+          width: 100%;
+          left: 0px;
+          display: flex;
+          padding: 0px;
+          top: 0px;
+          align-items: flex-start;
+          font-size: 14px;
+          padding-top: 10px;
+          border-top: 1px solid white;
+          box-shadow: none;
+          border-radius: 0px;
+          margin-top: 10px;
+          transition: 350ms all cubic-bezier(.5, 0, .3, 1);
+
+          
+        }
+        .drop-items-active{
+            position: relative;
+            display: flex;
+            transform: translateY(0px) scaleY(1);
+            
+
+        }
+      }
+  
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 @layer components{
 
