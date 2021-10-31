@@ -57,10 +57,10 @@ export default function Header() {
               <li className="py-4 border-[#C4C4C4] border-t-2 xl:py-0 xl:border-t-0">
                 <div className="cursor-pointer">YOLCULUĞUM</div>
               </li>
-              <li   onClick={()=>dropActive(dropitem1)} className="py-4 border-[#C4C4C4] border-t-2 xl:py-0 xl:border-t-0 menu-item relative">
+              <li     className="py-4 border-[#C4C4C4] border-t-2 xl:py-0 xl:border-t-0 menu-item relative">
                 <div className="flex justify-between">
                   <div className="cursor-pointer">ÇALIŞMALARIMIZ</div>
-                  <div className="mr-4 xl:hidden"> <i   className="fas fa-caret-down"></i></div>
+                  <div className="mr-4 xl:hidden"> <i  onClick={()=>dropActive(dropitem1)}  className="fas fa-caret-down cursor-pointer"></i></div>
                 </div>
 
                 <ul  id="dropitem1" className="drop-items">
@@ -75,7 +75,7 @@ export default function Header() {
 
                 </ul>
               </li>
-              <li className="py-4 border-[#C4C4C4] border-t-2 xl:py-0 xl:border-t-0">
+              <li className="py-4 border-[#C4C4C4] border-t-2 xl:py-0 xl:border-t-0 ">
                 <Link href="/journeyStart">
                   <div className="cursor-pointer">YOLCULUĞA BAŞLA</div>
                 </Link>

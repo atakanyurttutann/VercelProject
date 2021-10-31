@@ -102,10 +102,9 @@ body{
             display: flex;
             transform: translateY(0px) scaleY(1);
             
-
         }
       }
-  
+ 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 @layer components{
 
