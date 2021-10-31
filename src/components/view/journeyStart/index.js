@@ -46,7 +46,7 @@ const Index = () => {
   return (
     <div className="flex flex-col  w/12-12 mb-[400px] font-inter">
       <BigTitle title="Yolculuğa Başla" />
-      <div className="p-4  flex  xl:w-6/12 w-12/12 mx-auto xl:pt-10 pt-10">
+      <div className="p-4  flex  xl:w-6/12 w-12/12 mx-auto pt-10">
      
         {part == 1 && (
           <form className="" onSubmit={(e) => partSkip(e, 1)}>
@@ -58,9 +58,9 @@ const Index = () => {
         )}
 
         {part == 2 && (
-          <form onSubmit={(e) => partSkip2(e, 2)}>
+          <form className="mx-auto" onSubmit={(e) => partSkip2(e, 2)}>
         
-          <div className="text-4xl font-bold ">Adım {part}</div>
+          <div className="text-4xl font-bold">Adım {part}</div>
      
             <div className="text-2xl font-bold mt-10">
               Biraz Kendinden Bahsedermisin?
@@ -79,7 +79,7 @@ const Index = () => {
         )}
         {part == 3 && (
 
-          <div className="text-3xl font-bold mt-10 justify-center flex ">
+          <div className="text-3xl font-bold mt-10  mx-auto">
             Tamamlandı
           </div>
         )}
