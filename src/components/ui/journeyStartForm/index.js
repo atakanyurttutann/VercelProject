@@ -114,7 +114,7 @@ const JourneyStartForm = () => {
       </div>
 
       <div className="flex mt-10">
-       <Button value="Gönder" type="sumbit"/>
+       <Button value="Gönder " type="sumbit"/>
       </div>
     </div>
   );
