@@ -113,7 +113,7 @@ const JourneyStartForm = () => {
             />
       </div>
 
-      <div className="flex mt-5">
+      <div className="flex mt-10">
        <Button value="Gönder" type="sumbit"/>
       </div>
     </div>
