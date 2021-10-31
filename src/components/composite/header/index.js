@@ -70,8 +70,8 @@ export default function Header() {
                   <hr className="xl:w-full bg-black" />
                   <li>TAVSİYE EDİCİ GIDALAR</li>
                   <hr className="xl:w-full bg-black" />
-
-                  <li>TAVSİYE EDİCİ GIDALAR</li>
+<Link href="/gallery">   FOTOĞRAFLAR </Link>
+                
 
                 </ul>
               </li>
